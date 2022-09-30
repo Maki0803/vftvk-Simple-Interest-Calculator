@@ -1,4 +1,26 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black; font-family: sans-serif;}
+.main{
+    background-color:white;
+    border-radius: 30px;
+    padding:10px 20px 10px 20px;
+    margin: 50px auto;
+    width:470px;
+}
+h1{color:gray; font-size:35px;}
+
+.calculator{
+    margin: 10px auto;
+    width:330px;
+}
+
+label{
+    display:inline-block;
+    width: 130px;
+    margin-bottom: 15px;
+}
+
+.text-yellow{
+    background-color:yellow;
+}
 
 

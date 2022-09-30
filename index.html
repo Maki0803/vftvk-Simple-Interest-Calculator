@@ -4,13 +4,43 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="main">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <div class="calculator">
+            <label>Amount</label> <input type="number"  id="principal">  <br/>
+            <label>Interest Rate</label>  <input type="range" step="0.5" min="0.5" max="10" id="rate" value="0" oninput="getSliderValue()"/> <span id="sliderValue"></span>%  <br/>
+            <label>No. of Years  </label>  <select id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                    </select>   <br/>
+    
+            <button onclick="compute()">Compute Interest</button>
+        
+        <p>
+            If you deposit <span id="totalAmount" class="text-yellow">0</span>, <br/>
+            at an interest rate of <span id="computeRate" class="text-yellow">0</span>%, <br/>
+            you will receive an amount of <span id="profit" class="text-yellow">0</span>, <br/>
+            in the year <span id="year" class="text-yellow">0</span>
+        </p>
+    
+        </div>
 
-        <button onclick="compute()">Compute</button>
+      
+
+    <p>&copy; Everyone Can Get Rich</p>
+    
+
+
+</div>
+
     </body>
 </html>
